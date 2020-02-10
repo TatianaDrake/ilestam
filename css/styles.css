@@ -1,3 +1,79 @@
 html {
-  background: #FFC09F
+  box-sizing: border-box;
+  background: #FFD6C1;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-family: 'Qwigley', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  margin-right: 500px;
+}
+h2 {
+  font-size: 40px;
+}
+/*main {}*/
+  .mathematics_competitions a {
+    background: auto;
+    padding: 10px;
+    display: inline-block;
+  }
+  h3 {
+    margin: 0;
+  }
+
+/*Links
+_____________________*/
+a:link {
+  color: #D81E5B;
+}
+a:hover {
+  text-decoration: none;
+  color: #1E1A1D;
+}
+a:visited {
+  color: #D81E5B;
+}
+a:active {
+    color: #545E75;
+}
+a:focus {
+    color: #E5F2C9;
+}
+.content-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+.profile_img {
+  width: 70%;
+  float: right;
+  padding-left: 20px;
+}
+.column_right {
+  width: 40%;
+  float: left;
+  margin-bottom: 20px;
+}
+nav {
+  text-align: center;
+  background: #A29C9B;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: bold;
 }

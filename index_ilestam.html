@@ -5,24 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ilestam photography</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Qwigley&display=swap');
+  </style>
   </head>
   <body>
-    <p>Hej</p>
+
+    <header id="about">
+    <nav>
+      <a href="#about">Hem</a>
+      <a href="#work">Mina bilder</a>
+      <a href="#education">Om mig</a>
+      <a href="#contact">Kontakt</a>
+      <a href="#contact">Info bokning bröllop</a>
+    </nav>
+    <div class="content-wrap">
+      <div class="column_right">
+        <h1>Ilestam photography</h1>
+        <h2>Stunder i livet <br>Vackra minnen i Själ och Hjärta</h2>
+      </div>
+      <img class="profile_img" src="images/kamil-s-1427397-unsplash.jpg" alt="blossom">
+    <!--<div class="column_right">
+
+    </div>-->
+
+    </div>
+  </header>
+
     <!--contact_form START******method**action**-->
     <form class="contact_form" action="" method="post" name="contact_form">
-          <ul>
+          <ul style="list-style-type:none;">
              <li>
              <h2>Kontakt</h2>
              <span class="required_notification">* Denotes Required Field</span>
              </li>
              <li>
              <label for="name">Namn:</label>
-             <input type="text" name="name" />
+             <input type="text" name="name" placeholder="John Doe" />
+             </li>
+             <li>
+             <label for="telefonnummer">Telefonnummer:</label>
+             <input type="telefonnummer" name="telefonnummer" placeholder="0712 34 56 78" />
              </li>
              <li>
              <label for="email">Email:</label>
-             <input type="text" name="email" />
-             <span class="form_hint">Proper format email "name@something.com"</span>
+             <input type="text" name="email" placeholder="name@something.com"/>
+             <span class="form_hint">Proper format email</span>
             </li>
           <li>
            <label for="message">Message:</label>
@@ -33,7 +61,10 @@
            <button class="submit" type="submit">Submit Form</button>
           </li>
           </ul>
-
+          <!--
+          <input type="text" name="email" placeholder="email format" />
+          <input type="text" name="website" placeholder="http://johndoe.com/" required/>
+-->
     </form>
     <!--contact_form FINISH-->
     </body>
