@@ -1,43 +1,69 @@
 html {
   box-sizing: border-box;
-  background: #FFD6C1;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 body {
+  background: #FFD6C1;
   margin: 0;
   padding: 0;
-  font-family: 'Qwigley', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
+
 h1 {
-  font-family: 'Quicksand', cursive;
+  font-family: 'Qwigley', cursive;
   font-weight: 400;
-  font-size: 50px;
-  margin-right: 500px;
+  font-size: 100px;
+  color: #232630; /*CHARLESTON GREEN*/
 }
 h2 {
   font-size: 40px;
 }
-/*main {}*/
+.header {
+display: flex;
+list-style: none;
+justify-content: flex-end;
+}
+
+.item {
+  margin-right: 50px;
+}
+footer {
+  background: #A29C9B;
+}
+/*main {}
   .mathematics_competitions a {
     background: auto;
     padding: 10px;
     display: inline-block;
-  }
+  }*/
   h3 {
     margin: 0;
+  }
+  nav {
+    text-align: center;
+    background: #A29C9B;
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+  }
+  nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
   }
 
 /*Links
 _____________________*/
 a:link {
-  color: #D81E5B;
+  color: #FCF5C7;
 }
 a:hover {
   text-decoration: none;
-  color: #1E1A1D;
+  color: #F1F2EB;
 }
 a:visited {
   color: #D81E5B;
@@ -49,31 +75,29 @@ a:focus {
     color: #E5F2C9;
 }
 .content-wrap {
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 60px 50px;
-  overflow: hidden;
+  display: flex;
 }
 .profile_img {
-  width: 70%;
+  width: 100%;
   float: right;
-  padding-left: 20px;
+
 }
-.column_right {
+aside {
   width: 40%;
   float: left;
-  margin-bottom: 20px;
+  margin: 20px;
+  justify-content: space-around;
 }
-nav {
+
+button {
+  background: #FCF5C7;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 37px;
   text-align: center;
-  background: #A29C9B;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-nav a {
-  display: inline-block;
-  padding: 15px 20px;
-  text-decoration: none;
-  font-weight: bold;
+  text-transform: uppercase;
 }
