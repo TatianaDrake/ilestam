@@ -5,12 +5,18 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: #FFD6C1;
+  /*background: #FFD6C1;*/
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
 }
 
+.content-wrap {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+}
 
 h1 {
   font-family: 'Qwigley', cursive;
@@ -74,21 +80,33 @@ a:active {
 a:focus {
     color: #E5F2C9;
 }
-.content-wrap {
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-}
-.profile_img {
-  width: 100%;
-  float: right;
+/* EXAMPLE:
+HTML
+  <img class="profile_img" src="images/kamil-s-1427397-unsplash.png" alt="blossom">
 
+.education {
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
 }
+.education p {
+
+  width: 60%;
+}
+-----------------------------------*/
+.education {
+  background-image: url(images/kamil-s-1427397-unsplash.png);
+  background-size: cover;
+}
+
+
 aside {
-  width: 40%;
+  width: 60%;
   float: left;
   margin: 20px;
   justify-content: space-around;
+
 }
 
 button {
@@ -100,4 +118,18 @@ button {
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
+}
+/*.profile_img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  clear: left;
+}*/
+.item-details {
+  background: #FFD6C1;
+  width: 26%;
+  margin-left: 200px;
+}
+.contact_form {
+
 }
