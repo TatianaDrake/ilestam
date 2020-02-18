@@ -3,19 +3,17 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 body {
   /*background: #FFD6C1;*/
-  margin: 0;
-  padding: 0;
   font-family: 'Quicksand', sans-serif;
 }
 
-.content-wrap {
-  max-width: 100%;
-  max-height: 100vh;
+.container {
+  max-width: 1250px;
   margin: 0 auto;
-  display: flex;
 }
 
 h1 {
@@ -27,10 +25,8 @@ h1 {
 h2 {
   font-size: 40px;
 }
-.header {
-display: flex;
-list-style: none;
-justify-content: flex-end;
+.header_content {
+  display: flex;
 }
 
 .item {
@@ -50,7 +46,6 @@ footer {
   }
   nav {
     text-align: center;
-    background: #A29C9B;
     /*position: fixed;*/
     top: 0;
     width: 100%;
@@ -80,6 +75,38 @@ a:active {
 a:focus {
     color: #E5F2C9;
 }
+.header-navigation {
+  list-style: none;
+  display: flex;
+}
+.header-navigation li {
+  margin-right: 47px;
+  text-transform: uppercase;
+}
+.kontakt {
+  background-image: url('../images/kamil-s-1427397-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1400px;
+  height: 66.7%;
+  padding-top: 600px;
+}
+.hero_overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(35,38,48,0), rgba(35,38,48,1));
+  height: 200px;
+  z-index: 1;
+}
+.form {
+  margin-top: 600px;
+  background: #FDF9E0;
+  position: relative;
+}
 /* EXAMPLE:
 HTML
   <img class="profile_img" src="images/kamil-s-1427397-unsplash.png" alt="blossom">
@@ -95,29 +122,28 @@ HTML
   width: 60%;
 }
 -----------------------------------*/
-.education {
-  background-image: url(images/kamil-s-1427397-unsplash.png);
-  background-size: cover;
-}
 
 
 aside {
+  position: relative;
   width: 60%;
   float: left;
   margin: 20px;
   justify-content: space-around;
-
+  z-index: 1;
 }
 
 button {
-  background: #FCF5C7;
   font-family: 'Quicksand', sans-serif;
+  background: #FCF5C7;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 2px;
+  padding: 13px 33px;
 }
 /*.profile_img {
   width: 100%;
@@ -126,7 +152,7 @@ button {
   clear: left;
 }*/
 .item-details {
-  background: #FFD6C1;
+
   width: 26%;
   margin-left: 200px;
 }
