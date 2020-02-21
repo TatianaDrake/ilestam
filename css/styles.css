@@ -26,8 +26,14 @@ color: white;
 }
 .header_content {
   display: flex;
+<<<<<<< Updated upstream
   justify-content: space-between;
   align-items: center;
+=======
+  position: relative;
+  z-index: 1;
+  clear: both;
+>>>>>>> Stashed changes
 }
 
 .item {
@@ -79,6 +85,7 @@ a:focus {
 .header-navigation {
   list-style: none;
   display: flex;
+  height: 600px;
 }
 .header-navigation li {
   margin-right: 47px;
@@ -88,9 +95,13 @@ a:focus {
   background-image: url('../images/kamil-s-1427397-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< Updated upstream
   width: 1400px;
   height: 800px;
   padding-top: 200px;
+=======
+  height: 100%;
+>>>>>>> Stashed changes
   position: relative;
 }
 .hero_overlay {
@@ -102,7 +113,6 @@ a:focus {
   bottom: 0;
   background-image: linear-gradient(to top, rgba(35,38,48,0), rgba(35,38,48,1));
   height: 200px;
-  z-index: 1;
 }
 .title {
     font-family: 'Qwigley', cursive;
@@ -113,7 +123,7 @@ a:focus {
   }
 }
 .form {
-  margin-top: 600px;
+  margin-top: 60px;
   background: #FDF9E0;
   position: relative;
 }
@@ -139,8 +149,13 @@ hero-container {
 
 aside {
   position: relative;
+<<<<<<< Updated upstream
   display: block;
   float: left;
+=======
+  width: 60%;
+  float: right;
+>>>>>>> Stashed changes
   margin: 20px;
   justify-content: space-around;
   z-index: 1;
