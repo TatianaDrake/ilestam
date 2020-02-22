@@ -8,6 +8,7 @@ html {
 }
 body {
   /*background: #FFD6C1;*/
+  /*color: #d08284; persika*/
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -15,7 +16,11 @@ body {
   max-width: 1250px;
   margin: 0 auto;
 }
-
+.tnr {
+  display: flex;
+  color: #D81E5B;
+  float: right;
+}
 
 h2 {
   font-size: 40px;
@@ -26,16 +31,11 @@ color: white;
 }
 .header_content {
   display: flex;
-<<<<<<< Updated upstream
   justify-content: space-between;
   align-items: center;
-=======
   position: relative;
   z-index: 1;
-  clear: both;
->>>>>>> Stashed changes
 }
-
 .item {
   margin-right: 50px;
 }
@@ -91,18 +91,15 @@ a:focus {
   margin-right: 47px;
   text-transform: uppercase;
 }
+li:last-of-type {
+  color: #FFF2B0;
+}
 .hero {
   background-image: url('../images/kamil-s-1427397-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-<<<<<<< Updated upstream
-  width: 1400px;
-  height: 800px;
-  padding-top: 200px;
-=======
-  height: 100%;
->>>>>>> Stashed changes
   position: relative;
+  height: 100vh;
 }
 .hero_overlay {
   content: '';
@@ -121,69 +118,60 @@ a:focus {
     color: #232630; /*CHARLESTON GREEN*/
     position: relative;
   }
-}
+
 .form {
   margin-top: 60px;
   background: #FDF9E0;
   position: relative;
 }
-/* EXAMPLE:
-HTML
-  <img class="profile_img" src="images/kamil-s-1427397-unsplash.png" alt="blossom">
 
-.education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
-  background-size: cover;
-  background-position: top right;
-  padding-bottom: 100px;
-}
-.education p {
-
-  width: 60%;
-}
------------------------------------*/
-hero-container {
+.hero-container {
   position: relative;
-  z-index: relative;
+  z-index: 1;
 }
 
 aside {
   position: relative;
-<<<<<<< Updated upstream
-  display: block;
-  float: left;
-=======
-  width: 60%;
-  float: right;
->>>>>>> Stashed changes
-  margin: 20px;
+  display: inline-block;
+  width: 40%;
+  margin: 250px 100px;
   justify-content: space-around;
   z-index: 1;
   text-align: center;
-  color: #D8DAD3;
-  background: #d08284;
-  border: 0;
-  border-radius: 2px;
-  padding: 13px 33px;
+  /*border-top: double;
+  border-bottom: double;
+  border-bottom-width: 4px;*/
+  padding: 10px 30px;
+  color: #BAA898;
+  mix-blend-mode: color-dodge;
 }
 aside h1 {
-  padding: 20px;
-  border-top: double;
-  border-bottom: double;
-  border-bottom-width: 4px;
+  font-family: 'Qwigley', cursive;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20rem;
+  line-height: 200px;
+  text-align: center;
 }
-
+aside p {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 10rem;
+  line-height: 200px;
+}
 button {
   font-family: 'Quicksand', sans-serif;
   background: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 15px;
   text-align: center;
   text-transform: uppercase;
   border-radius: 2px;
-  padding: 13px 33px;
+  padding: 20px 50px;
+  color: #BAA898;
 }
 /*.profile_img {
   width: 100%;
