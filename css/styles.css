@@ -36,9 +36,7 @@ color: white;
   position: relative;
   z-index: 1;
 }
-.item {
-  margin-right: 50px;
-}
+
 footer {
   background: #A29C9B;
 }
@@ -59,9 +57,7 @@ footer {
   /*se rad 41 - 53*/
   nav a {
     display: inline-block;
-    padding: 15px 20px;
     text-decoration: none;
-    font-weight: bold;
   }
 
 /*Links
@@ -87,13 +83,7 @@ a:focus {
   display: flex;
   height: 600px;
 }
-.header-navigation li {
-  margin-right: 47px;
-  text-transform: uppercase;
-}
-li:last-of-type {
-  color: #FFF2B0;
-}
+
 .hero {
   background-image: url('../images/kamil-s-1427397-unsplash.jpg');
   background-size: cover;
@@ -111,13 +101,7 @@ li:last-of-type {
   background-image: linear-gradient(to top, rgba(35,38,48,0), rgba(35,38,48,1));
   height: 200px;
 }
-.title {
-    font-family: 'Qwigley', cursive;
-    font-weight: 400;
-    font-size: 100px;
-    color: #232630; /*CHARLESTON GREEN*/
-    position: relative;
-  }
+
 
 .form {
   margin-top: 60px;
@@ -134,7 +118,7 @@ aside {
   position: relative;
   display: inline-block;
   width: 40%;
-  margin: 250px 100px;
+
   justify-content: space-around;
   z-index: 1;
   text-align: center;
@@ -145,21 +129,7 @@ aside {
   color: #BAA898;
   mix-blend-mode: color-dodge;
 }
-aside h1 {
-  font-family: 'Qwigley', cursive;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 20rem;
-  line-height: 200px;
-  text-align: center;
-}
-aside p {
-  font-family: 'Quicksand', sans-serif;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 10rem;
-  line-height: 200px;
-}
+
 button {
   font-family: 'Quicksand', sans-serif;
   background: none;
@@ -179,11 +149,123 @@ button {
   z-index: -1;
   clear: left;
 }*/
-.item-details {
 
-  width: 26%;
-  margin-left: 200px;
-}
 .contact_form {
 
+}
+/*  Latest News  START */
+.block .flex_container {
+ background: #F1F2EB;
+ } /*the lightest "white" ISABELLINE*/
+ h3 + h5 {
+   color: #A5A6A7;
+ }
+ .flex_container {
+   display: flex;
+   justify-content: space-between;
+ }
+ .block_element h3 {
+   font-size: 40px;
+   border-top: none;
+   float: left;
+   padding: 0 auto;
+   margin: 0 auto;
+ }
+/*  Latest News  FINISH */
+
+/*RESPONSE STYLES*/
+@media screen and (min-width:375px){
+  aside {
+    margin: 250px 100px;
+  }
+
+  .header-navigation li {
+    margin-right: 20px;
+    text-transform: uppercase;
+  }
+  .item {
+    margin-right: 50px;
+  }
+  nav a {
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  button {
+    font-family: 'Quicksand', sans-serif;
+    background: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 30px 75px;
+    color: #BAA898;
+  }
+  aside h1 {
+    font-family: 'Qwigley', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40rem;
+    line-height: 200px;
+    text-align: center;
+  }
+  aside p {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 10rem;
+    line-height: 200px;
+  }
+}
+
+@media screen and (max-width:374px){
+  aside {
+    margin: 150px 0;
+  }
+  .header-navigation li {
+    margin-right: 11px;
+    text-transform: uppercase;
+  }
+  .item li {
+    margin-right: 0;
+  }
+  nav a {
+    padding: 3px 4px;
+    font-weight: lighter;
+    font-size: 0.6rem;
+  }
+  button {
+    font-family: 'Quicksand', sans-serif;
+    background: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 40px;
+    margin-top: 30px;
+    color: #BAA898;
+  }
+
+  aside h1 {
+    font-family: 'Qwigley', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+  aside p {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 3.5rem;
+  }
 }
