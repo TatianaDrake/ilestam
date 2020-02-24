@@ -164,6 +164,10 @@ button {
    display: flex;
    justify-content: space-between;
  }
+ 
+ .block_element {
+   margin: 20px 50px;
+ }
  .block_element h3 {
    font-size: 40px;
    border-top: none;
