@@ -15,7 +15,9 @@ body {
 .container {
   max-width: 1250px;
   margin: 0 auto;
+  padding: 60px 0;
 }
+
 .tnr {
   display: flex;
   color: #D81E5B;
@@ -141,6 +143,7 @@ button {
   border-radius: 2px;
   padding: 20px 50px;
   color: #BAA898;
+  display: inline-block;
 }
 .latest_news {
   background: rgba(255, 205, 201, 0.5);
