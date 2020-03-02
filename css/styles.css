@@ -104,7 +104,6 @@ a:focus {
 
 
 .form {
-  margin-top: 60px;
   background: #FDF9E0;
   position: relative;
 }
@@ -143,6 +142,18 @@ button {
   padding: 20px 50px;
   color: #BAA898;
 }
+.latest_news {
+  background: rgba(255, 205, 201, 0.5);
+
+}
+.latest_news h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+h2 + p {
+  text-align: center;
+  margin-top: 0;
+}
 /*.profile_img {
   width: 100%;
   position: absolute;
@@ -162,12 +173,19 @@ button {
  }
  .flex_container {
    display: flex;
-   justify-content: space-between;
+
  }
- 
+ .flex_element {
+   width: 33%;
+
+ }
  .block_element {
-   margin: 20px 50px;
+   margin: 15px 30px;
+   justify-content: center;
  }
+.flex_element img {
+
+}
  .block_element h3 {
    font-size: 40px;
    border-top: none;
