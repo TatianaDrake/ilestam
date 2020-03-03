@@ -180,6 +180,7 @@ h2 + p {
 
  .flex_element h3 {
    color: #463F3A;
+
  }
 
  .block_element {
@@ -202,16 +203,30 @@ h2 + p {
 }
 .om_mig img {
   width: 400px;
+
 }
 .om_mig h1 {
-  font-size: 80px;
+  font-size: 100px;
+  font-family: 'Qwigley', cursive;
+  font-style: italic;
+  color: #463F3A;
+  text-align: center;
+}
+.om_mig h2 {
+  text-align: center;
+  text-transform: uppercase;
 }
 .om_mig p {
-  font-size: 60px;
+  font-size: 20px;
   line-height: normal;
 }
-.om_mig aside {
-  margin: auto;
+.flex_element_om_mig {
+  width: 50%;
+  justify-content: space-around;
+  text-align: left;
+}
+.flex_element_om_mig button {
+  text-align: center;
 }
 /*RESPONSE STYLES*/
 @media screen and (min-width:375px){
@@ -221,6 +236,7 @@ h2 + p {
   .block_element h3 {
     font-size: 40px;
   }
+
   h2 {
     font-size: 40px;
     text-transform: uppercase;
