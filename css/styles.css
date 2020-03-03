@@ -165,7 +165,7 @@ h2 + p {
 
 }
 /*  Latest News  START */
-.block .flex_container {
+.block {
  background: #F1F2EB;
  } /*the lightest "white" ISABELLINE*/
  h3 + h5 {
@@ -197,6 +197,22 @@ h2 + p {
  }
 /*  Latest News  FINISH */
 
+.om_mig {
+  background: blanchedalmond;
+}
+.om_mig img {
+  width: 400px;
+}
+.om_mig h1 {
+  font-size: 80px;
+}
+.om_mig p {
+  font-size: 60px;
+  line-height: normal;
+}
+.om_mig aside {
+  margin: auto;
+}
 /*RESPONSE STYLES*/
 @media screen and (min-width:375px){
   .news {
