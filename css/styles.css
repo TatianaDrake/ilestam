@@ -24,7 +24,6 @@ body {
   float: right;
 }
 
-
 .logo {
 color: white;
 }
@@ -201,35 +200,39 @@ h2 + p {
 .om_mig {
   background: blanchedalmond;
 }
-.om_mig img {
-  width: 400px;
-
-}
 .om_mig h1 {
-  font-size: 100px;
   font-family: 'Qwigley', cursive;
   font-style: italic;
   color: #463F3A;
   text-align: center;
 }
+
 .om_mig h2 {
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase;
 }
-.om_mig p {
-  font-size: 20px;
-  line-height: normal;
-}
+
 .flex_element_om_mig {
   width: 50%;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: left;
 }
 .flex_element_om_mig button {
   text-align: center;
+  margin-left: 25%;
 }
 /*RESPONSE STYLES*/
 @media screen and (min-width:375px){
+  .om_mig p {
+    font-size: 20px;
+    line-height: 2;
+  }
+  .om_mig h1 {
+    font-size: 100px;
+  }
+  .om_mig img {
+    width: 400px;
+  }
   .news {
     margin: 40px 0;
   }
@@ -294,6 +297,17 @@ h2 + p {
 }
 
 @media screen and (max-width:374px){
+  .om_mig p {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .om_mig h1 {
+    font-size: 80px;
+  }
+  .om_mig img {
+    width: 200px;
+    margin-left: 10%;
+  }
   .block_element p {
     line-height: 1.5;
   }
