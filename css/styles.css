@@ -212,17 +212,18 @@ h2 + p {
   text-transform: uppercase;
 }
 
-.flex_element_om_mig {
-  width: 50%;
-  justify-content: space-between;
-  text-align: left;
-}
-.flex_element_om_mig button {
-  text-align: center;
-  margin-left: 25%;
-}
+
 /*RESPONSE STYLES*/
 @media screen and (min-width:375px){
+  .flex_element_om_mig {
+    width: 50%;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .flex_element_om_mig button {
+    text-align: center;
+    margin-left: 25%;
+  }
   .om_mig p {
     font-size: 20px;
     line-height: 2;
@@ -297,16 +298,27 @@ h2 + p {
 }
 
 @media screen and (max-width:374px){
+  .flex_element_om_mig {
+    clear: both;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .flex_element_om_mig button {
+    text-align: center;
+    margin-left: 25%;
+  }
   .om_mig p {
     font-size: 15px;
     line-height: 1.2;
+    margin-left: 50%;
   }
   .om_mig h1 {
     font-size: 80px;
+    margin-left: 50%;
   }
   .om_mig img {
     width: 200px;
-    margin-left: 10%;
+    margin-left: 25%;
   }
   .block_element p {
     line-height: 1.5;
