@@ -15,7 +15,7 @@ body {
 .container {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 20px;
 }
 
 .tnr {
@@ -115,16 +115,16 @@ aside {
   position: relative;
   display: inline-block;
   width: 40%;
-
   justify-content: space-around;
   z-index: 1;
   text-align: center;
-  /*border-top: double;
-  border-bottom: double;
-  border-bottom-width: 4px;*/
-  padding: 10px 30px;
-  color: #BAA898;
+  color: #D19E83;
   mix-blend-mode: color-dodge;
+}
+aside h1::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
 }
 
 button {
@@ -138,7 +138,7 @@ button {
   text-transform: uppercase;
   border-radius: 2px;
   padding: 20px 50px;
-  color: #BAA898;
+  color: #A37B66;
   display: inline-block;
 }
 
@@ -253,6 +253,7 @@ h2 + p {
   }
   aside {
     margin: 250px 100px;
+    padding-bottom: 200px;
   }
 
   .header-navigation li {
@@ -284,7 +285,7 @@ h2 + p {
     font-family: 'Qwigley', cursive;
     font-style: italic;
     font-weight: bold;
-    font-size: 40rem;
+    font-size: 20rem;
     line-height: 200px;
     text-align: center;
   }
@@ -304,21 +305,21 @@ h2 + p {
     text-align: left;
   }
   .flex_element_om_mig button {
-    text-align: center;
-    margin-left: 25%;
+
+    margin-left: 15%;
   }
   .om_mig p {
     font-size: 15px;
     line-height: 1.2;
-    margin-left: 50%;
+    margin: 0 10%;
   }
   .om_mig h1 {
     font-size: 80px;
-    margin-left: 50%;
+    margin: 0 10%;
   }
   .om_mig img {
-    width: 200px;
-    margin-left: 25%;
+    width: 250px;
+    margin-left: 15%;
   }
   .block_element p {
     line-height: 1.5;
@@ -340,7 +341,7 @@ h2 + p {
     flex-direction: column;
   }
   aside {
-    margin: 150px 0;
+    margin: 500px 0;
   }
   .header-navigation li {
     margin-right: 11px;
@@ -349,26 +350,32 @@ h2 + p {
   .item li {
     margin-right: 0;
   }
+  li:nth-of-type(2n-1) {
+    display: none;
+  }
   nav a {
     padding: 3px 4px;
     font-weight: lighter;
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   button {
     font-family: 'Quicksand', sans-serif;
     background: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
-    line-height: 10px;
+    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
     border-radius: 4px;
-    padding: 10px 40px;
-    margin-top: 30px;
-    color: #BAA898;
+    padding: 10px 80px;
+    margin: 40px 30px;
+    color: #FFD1B9;
   }
-
+#button {
+  padding: 10px 20px;
+  color: #463F3A;
+}
   aside h1 {
     font-family: 'Qwigley', cursive;
     font-style: italic;
