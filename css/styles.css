@@ -341,7 +341,7 @@ h2 + p {
     flex-direction: column;
   }
   aside {
-    margin: 500px 0;
+    margin: 300px 0;
   }
   .header-navigation li {
     margin-right: 11px;
