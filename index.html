@@ -123,17 +123,41 @@
              </li>
              <li>
              <label for="name">Namn:</label>
-             <input type="text" name="name" placeholder="John Doe" />
+             <input type="text" name="name" placeholder="John Doe"/>
              </li>
              <li>
+            <legend>Select type of event:</legend>
+             <input type="checkbox" name="type_of_event" value="wedding" id="wedding"/>
+             <label for="wedding">Wedding</label><br>
+             <input type="checkbox" name="type_of_event" value="pregnant" id="pregnant"/>
+             <label for="pregnant">Pregnant</label><br>
+             <input type="checkbox" name="type_of_event" value="life_style" id="life_style"/>
+             <label for="life_style">Life style</label><br>
+            </li>
+            <li>
+             <input type="checkbox" name="type_of_event" value="education" id="education"/>
+             <label for="education">Education:</label><br>
+             <select name="education" id="education" multiple size="4">
+               <optgroup label="type_of_curse">Type of curse</optgroup>
+               <option value="curse_a">curs_a</option>
+               <option value="curse_b">curs_b</option>
+               <option value="curse_c">curs_c</option>
+             </select>
+            </li>
+            <br>
+             <li>
              <label for="telefonnummer">Telefonnummer:</label>
-             <input type="telefonnummer" name="telefonnummer" placeholder="0712 34 56 78" />
+             <input type="telefonnummer" name="telefonnummer" placeholder="1234567890"/>
              </li>
              <li>
              <label for="email">Email:</label>
              <input type="text" name="email" placeholder="name@something.com"/>
              <span class="form_hint">Proper format email</span>
             </li>
+              <li>
+              <label for="date">Event date:</label>
+              <input type="date" name="date" min="2020-03-10" max="2020-12-31"/>
+             </li>
           <li>
            <label for="message">Message:</label>
            <textarea name="message" cols="40" rows="6">
