@@ -159,10 +159,48 @@ h2 + p {
   z-index: -1;
   clear: left;
 }*/
-
-.contact_form {
-
+/****************************************************************  FORM  START */
+.contact_form button, input, select, textarea {
+font-family: inherit;
+font-size: 100%;
+color: #463F3A;
 }
+section h1 {
+  font-family: 'Qwigley', cursive;
+  font-style: italic;
+  color: #463F3A;
+  text-align: center;
+  font-size: 6rem;
+}
+input[type="date"] {
+  font-size: 2em;
+  color: #463F3A;
+}
+label, legend {
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+label {
+  display: inline-block;
+}
+input[type="checkbox"] + label {
+  font-weight: normal;
+  margin-right: 5rem;
+}
+input, textarea, select {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border-radius: 7px;
+  background-color: #FEFCEF;
+}
+/* textarea, select, input {
+  vertical-align: middle;
+} */
+
+/****************************************************************  FORM  finish */
 /*  Latest News  START */
 .block {
  background: #F1F2EB;
@@ -219,6 +257,7 @@ h2 + p {
     width: 50%;
     justify-content: space-between;
     text-align: left;
+    
   }
   .flex_element_om_mig button {
     text-align: center;
