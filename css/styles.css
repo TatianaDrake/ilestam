@@ -189,13 +189,13 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
   font-weight: normal;
   margin-right: 5rem;
-  background: url('../images/checkbox_epty.png') left center no-repeat;
+  background: url('../images/Vector.jpg') left center no-repeat;
   background-size: 1em 1em;
   padding-left: 1.5em;
   margin-left: -1.5em;
 }
 input[type="checkbox"]:checked + label {
-  background: url('../images/checkbox_checked.png') left center no-repeat;
+  background: url('../images/checkbox_epty.png') left center no-repeat;
   background-size: 1em 1em;
 }
 input, textarea, select {
@@ -206,6 +206,15 @@ input, textarea, select {
   border-radius: 7px;
   background-color: #FEFCEF;
 }
+input:focus {
+  background-color: rgb(227, 194, 113);
+
+}
+input:active {
+  background-color: #FEFEF9;
+  transition-duration: 1s;
+}
+
 /* textarea, select, input {
   vertical-align: middle;
 } */
@@ -329,6 +338,7 @@ input, textarea, select {
     border-radius: 4px;
     padding: 30px 75px;
     color: #BAA898;
+    cursor: pointer;
   }
   aside h1 {
     font-family: 'Qwigley', cursive;
