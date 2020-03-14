@@ -183,14 +183,24 @@ label, legend {
 label {
   display: inline-block;
 }
+input[type="checkbox"] {
+  opacity: 0;
+}
 input[type="checkbox"] + label {
   font-weight: normal;
   margin-right: 5rem;
+  background: url('../images/checkbox_epty.png') left center no-repeat;
+  background-size: 1em 1em;
+  padding-left: 1.5em;
+  margin-left: -1.5em;
+}
+input[type="checkbox"]:checked + label {
+  background: url('../images/checkbox_checked.png') left center no-repeat;
+  background-size: 1em 1em;
 }
 input, textarea, select {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
   padding: 5px;
   margin: 10px 0 10px 0;
   border-radius: 7px;
@@ -257,7 +267,7 @@ input, textarea, select {
     width: 50%;
     justify-content: space-between;
     text-align: left;
-    
+
   }
   .flex_element_om_mig button {
     text-align: center;
