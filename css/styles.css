@@ -186,14 +186,7 @@ label {
 input[type="checkbox"] {
   opacity: 0;
 }
-input[type="checkbox"] + label {
-  font-weight: normal;
-  margin-right: 5rem;
-  background: url('../images/Vector.jpg') left center no-repeat;
-  background-size: 1em 1em;
-  padding-left: 1.5em;
-  margin-left: -1.5em;
-}
+
 input[type="checkbox"]:checked + label {
   background: url('../images/checkbox_epty.png') left center no-repeat;
   background-size: 1em 1em;
@@ -272,6 +265,14 @@ input:active {
 
 /*RESPONSE STYLES*/
 @media screen and (min-width:375px){
+  input[type="checkbox"] + label {
+    font-weight: normal;
+    margin-right: 5rem;
+    background: url('../images/Vector.jpg') left center no-repeat;
+    background-size: 1em 1em;
+    padding-left: 1.5em;
+    margin-left: -1.5em;
+  }
   .flex_element_om_mig {
     width: 50%;
     justify-content: space-between;
@@ -358,6 +359,18 @@ input:active {
 }
 
 @media screen and (max-width:374px){
+  textarea[name="message"] {
+    width: 90%;
+  }
+
+  input[type="checkbox"] + label {
+    font-weight: normal;
+
+    background: url('../images/Vector.jpg') left center no-repeat;
+    background-size: 1em 1em;
+    padding-left: 1.5em;
+
+  }
   .flex_element_om_mig {
     clear: both;
     justify-content: space-between;
