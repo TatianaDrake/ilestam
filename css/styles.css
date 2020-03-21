@@ -160,6 +160,7 @@ h2 + p {
   clear: left;
 }*/
 /****************************************************************  FORM  START */
+
 .contact_form button, input, select, textarea {
 font-family: inherit;
 font-size: 100%;
