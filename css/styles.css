@@ -17,17 +17,20 @@ body {
 /*SLIDER CSS start*/
 
 .mina_bilder {
-	height: 350px;
-	margin: 100px auto 0;
+	height: 600px;
+	/*margin: 100px auto 0;*/
 	position: relative;
-	width: 700px;
+	width: 100vw;
   background: mistyrose;
 }
-
+.wrapper_slider {
+  margin: 20px;
+}
 .slider {
-	height: 350px;
-position: relative;
-	width: 700px;
+  margin-top: -40px;
+	height: 500px;
+  position: relative;
+  width: 700px;
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
@@ -39,10 +42,10 @@ position: relative;
   background-repeat: no-repeat;
   opacity: 0;
   position: absolute;
-	height: 300px;
+	height: 500px;
 	/*opacity: 0;*/
 	width: 700px;
-	z-index: 2;
+
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);
@@ -68,11 +71,10 @@ position: relative;
 .mina_bilder label {
 	cursor: pointer;
 	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
+	height: 18px;
+	margin: 50px 22px 0 16px;
 	position: relative;
-	width: 8px;
-  z-index: 5;
+	width: 18px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -83,15 +85,15 @@ position: relative;
 	transition: background ease-in-out .5s;
 }
 
-.mina_bilder label:after {
-	border: 2px solid #ddd;
+.controls label::after {
+	border: 2px solid tan;
 	content: " ";
 	display: block;
-	height: 12px;
+	height: 22px;
 	left: -4px;
 	position: absolute;
 	top: -4px;
-	width: 12px;
+	width: 22px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -104,7 +106,7 @@ position: relative;
 #slide4:checked ~ .slider > .slide4,
 #slide5:checked ~ .slider > .slide5 {
 	opacity: 1;
-	z-index: 5;
+
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
@@ -113,26 +115,24 @@ position: relative;
 .mina_bilder > input {
 	display: none;
 }
-input[type="radio"]{
-  margin-bottom: 50px;
-}
+
 .mina_bilder label:hover,
 #slide1:checked ~ .controls label:nth-of-type(1),
 #slide2:checked ~ .controls label:nth-of-type(2),
 #slide3:checked ~ .controls label:nth-of-type(3),
 #slide4:checked ~ .controls label:nth-of-type(4),
 #slide5:checked ~ .controls label:nth-of-type(5) {
-	background: #ddd;
+	background: tan;
 }
 
 .mina_bilder label:after {
-	border: 2px solid #ddd;
+	border: 2px solid tan;
 	content: " ";
 	display: block;
 	height: 12px;
 	left: -4px;
 	position: absolute;
-	top: -4px;
+  top: -4px;
 	width: 12px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
