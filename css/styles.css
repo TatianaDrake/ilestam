@@ -14,17 +14,56 @@ body {
   /*color: #d08284; persika*/
   font-family: 'Quicksand', sans-serif;
 }
+
+  .mina_bilder_grid {
+    padding: 20px;
+  	height: 100vh;
+  	/*margin: 100px auto 0;*/
+  	position: relative;
+  	width: 100vw;
+    background: #ECCFD5;
+  }
+
+.grid-container {
+  border: 5px solid maroon;
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, auto));
+  gap: 10px;
+}
+.grid_item {
+  padding: 10px 20px;
+}
+.grid_item:nth-child(1) {
+  background: brown;
+}
+.grid_item:nth-child(2) {
+  background: bisque;
+}
+.grid_item:nth-child(4) {
+  background: bisque;
+}
+.grid_item:nth-child(6) {
+  background: bisque;
+}
+.grid_item:nth-child(3) {
+  background: brown;
+}
+.grid_item:nth-child(5) {
+  background: brown;
+}
 /*SLIDER CSS start*/
 
 .mina_bilder {
-	height: 600px;
+	height: 100vh;
 	/*margin: 100px auto 0;*/
 	position: relative;
 	width: 100vw;
   background: mistyrose;
 }
 .wrapper_slider {
-  margin: 20px;
+  position: absolute;
+  margin-left: 15%;
 }
 .slider {
   margin-top: -40px;
@@ -43,7 +82,6 @@ body {
   opacity: 0;
   position: absolute;
 	height: 500px;
-	/*opacity: 0;*/
 	width: 700px;
 
 	-webkit-transform: scale(1.5);
@@ -62,13 +100,14 @@ body {
 .slide4 { background-image: url('../images/da-kraplak-j4cOKZojvNI-unsplash.jpg'); }
 .slide5 { background: green; }
 
-.mina_bilder .controls {
+ .controls {
 	left: 50%;
 	margin-left: -98px;
 	position: absolute;
 }
 
 .mina_bilder label {
+
 	cursor: pointer;
 	display: inline-block;
 	height: 18px;
@@ -86,6 +125,7 @@ body {
 }
 
 .controls label::after {
+  text-align: center;
 	border: 2px solid tan;
 	content: " ";
 	display: block;
