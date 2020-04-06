@@ -55,7 +55,7 @@ body {
 /*SLIDER CSS start*/
 
 .mina_bilder {
-	height: 100vh;
+	height: 120vh;
 	/*margin: 100px auto 0;*/
 	position: relative;
 	width: 100vw;
@@ -169,11 +169,11 @@ body {
 	border: 2px solid tan;
 	content: " ";
 	display: block;
-	height: 12px;
+	height: 26px;
 	left: -4px;
 	position: absolute;
   top: -4px;
-	width: 12px;
+	width: 26px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
