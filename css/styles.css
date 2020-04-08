@@ -17,7 +17,7 @@ body {
 
   .mina_bilder_grid {
     padding: 20px;
-  	height: 100vh;
+  	height: auto;
   	/*margin: 100px auto 0;*/
   	position: relative;
   	width: 100vw;
@@ -25,17 +25,16 @@ body {
   }
 
 .grid-container {
-  border: 5px solid maroon;
+  border: 2px solid maroon;
   display: grid;
   grid-template-columns: 2fr repeat(2, 1fr);
   grid-template-rows: repeat(2, minmax(100px, auto));
   gap: 10px;
 }
-.grid_item {
+/*.grid_item {
   padding: 10px 20px;
 }
 .grid_item:nth-child(1) {
-  background: brown;
 }
 .grid_item:nth-child(2) {
   background: bisque;
@@ -51,7 +50,7 @@ body {
 }
 .grid_item:nth-child(5) {
   background: brown;
-}
+}*/
 /*SLIDER CSS start*/
 
 .mina_bilder {
