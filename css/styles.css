@@ -78,8 +78,8 @@ a:hover .caption {
   opacity: 0;
 }
 .item1 { /******************** change! ********************/
-  grid-row: 2 / 2;
-  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 2;
 }
 /*SLIDER CSS start*/
 
@@ -472,6 +472,7 @@ input:active {
 @supports (grid-area: auto) {
 
 @media screen and (min-width:378px){
+  
   .grid-container {
     border: 2px solid maroon;
     display: grid;
