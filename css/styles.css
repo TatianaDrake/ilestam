@@ -30,6 +30,25 @@ figure img {
   width: 100vw;
   background: #ECCFD5;
 }
+
+/*ul li {
+  position: relative;
+}*/
+
+ul li div.preview {
+  position: absolute;
+  top: -100px;
+  left: 110px;
+  z-index: 100;
+}
+
+ul li div.preview img {
+  display: block;
+  border: 1px solid #FCF4DC;
+  /*-webkit-box-shadow: 5px 5px 12px black;
+  -moz-box-shadow: 5px 5px 12px black;
+  box-shadow: 5px 5px 12px black; */
+}
 /*
 .grid-container {
   border: 2px solid maroon;
@@ -472,7 +491,7 @@ input:active {
 @supports (grid-area: auto) {
 
 @media screen and (min-width:378px){
-  
+
   .grid-container {
     border: 2px solid maroon;
     display: grid;
