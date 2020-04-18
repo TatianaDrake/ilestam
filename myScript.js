@@ -1,5 +1,5 @@
 //zoom pictures START
-document.querySelector('.grid_item').addEventListener('click', function(e) {
+document.querySelector('.grid-container').addEventListener('click', function(e) {
   if (e.target.tagName === 'IMG') {
 
     var myElement = document.createElement('div');
