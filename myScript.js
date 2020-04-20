@@ -10,9 +10,21 @@ document.querySelector('.flex_element_om_mig').addEventListener('click', functio
     var imgLoc = e.target.src;
     myImg.src = imgLoc.substr(0, imgLoc.length-7) + '.jpg';
     myElement.appendChild(myImg);
+
+    e.target.addEventListener('click', function(d) {
+      var myNode = d.target.parentNode.querySelector('div.preview');
+      myNode.parentNode.removeChild(myNode);
+      e.target.removeEventListener('click', false);
+    }, false);
   } // check to see that I clicked on IMG only
 }, false); // click event
-
+/*
+function clear(elem) {
+  while (elem.firstChild) {
+    elem.firstChild.remove();
+  }
+}
+*/
 
     //zoom pictures FINISH
 //hide the paragraph start
