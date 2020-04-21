@@ -1,31 +1,16 @@
 //zoom pictures START
-document.querySelector('.flex_element_om_mig').addEventListener('click', function(e) {
-  if (e.target.tagName === 'IMG') {
+document.querySelector('img.om_mig').addEventListener('click', function(e) {
+  var lowRes = e.target.src;
+  var myOverlay = document.querySelector('.overlay_om_mig');
+  var highRes = document.createElement('img');
+  var imgLoc = e.target.src;
 
-    var myElement = document.createElement('div');
-    myElement.className = 'preview';
-    e.target.parentNode.appendChild(myElement);
+  myOverlay.style.display = 'block';
+  highRes.className = 'bgImg';
+  highRes.src = imgLoc.substr(0, imgLoc.length-7) + '.jpg';
+  myOverlay.appendChild(highRes);
 
-    var myImg = document.createElement('img');
-    var imgLoc = e.target.src;
-    myImg.src = imgLoc.substr(0, imgLoc.length-7) + '.jpg';
-    myElement.appendChild(myImg);
-
-    e.target.addEventListener('click', function handler(d) {
-      var myNode = d.target.parentNode.querySelector('div.preview');
-      myNode.parentNode.removeChild(myNode);
-      e.target.removeEventListener('click', handler, false);
-    }, false);
-    //parent.removeChild(child);
-  } // check to see that I clicked on IMG only
-}, false); // click event
-/*
-function clear(elem) {
-  while (elem.firstChild) {
-    elem.firstChild.remove();
-  }
-}
-*/
+  }, false);
 
     //zoom pictures FINISH
 //hide the paragraph start

@@ -30,25 +30,6 @@ figure img {
   width: 100vw;
   background: #ECCFD5;
 }
-
-/*ul li {
-  position: relative;
-}*/
-
-ul li div.preview {
-  position: absolute;
-  top: -100px;
-  left: 110px;
-  z-index: 100;
-}
-
-ul li div.preview img {
-  display: block;
-  border: 1px solid #FCF4DC;
-  /*-webkit-box-shadow: 5px 5px 12px black;
-  -moz-box-shadow: 5px 5px 12px black;
-  box-shadow: 5px 5px 12px black; */
-}
 /*
 .grid-container {
   border: 2px solid maroon;
@@ -470,10 +451,36 @@ input:active {
    margin: 0 auto;
  }
 /*  Latest News  FINISH */
-
+/******************************** om_mig*/
 .om_mig {
   background: blanchedalmond;
 }
+img.preview {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 200px;
+  cursor: pointer;
+}
+
+.overlay_om_mig {
+  display: none;
+  position: absolute;
+
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+img.bgImg {
+
+  display: block;
+  margin: 0 auto;
+}
+
+
 .om_mig h1 {
   font-family: 'Qwigley', cursive;
   font-style: italic;
