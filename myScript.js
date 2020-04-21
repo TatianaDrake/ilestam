@@ -11,11 +11,12 @@ document.querySelector('.flex_element_om_mig').addEventListener('click', functio
     myImg.src = imgLoc.substr(0, imgLoc.length-7) + '.jpg';
     myElement.appendChild(myImg);
 
-    e.target.addEventListener('click', function(d) {
+    e.target.addEventListener('click', function handler(d) {
       var myNode = d.target.parentNode.querySelector('div.preview');
       myNode.parentNode.removeChild(myNode);
-      e.target.removeEventListener('click', false);
+      e.target.removeEventListener('click', handler, false);
     }, false);
+    //parent.removeChild(child);
   } // check to see that I clicked on IMG only
 }, false); // click event
 /*
