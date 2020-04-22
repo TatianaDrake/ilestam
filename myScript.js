@@ -10,6 +10,10 @@ document.querySelector('img.om_mig').addEventListener('click', function(e) {
   highRes.src = imgLoc.substr(0, imgLoc.length-7) + '.jpg';
   myOverlay.appendChild(highRes);
 
+  highRes.addEventListener('click', function() {
+  myOverlay.parentNode.removeChild(myOverlay);
+  });
+
   }, false);
 
     //zoom pictures FINISH
