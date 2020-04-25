@@ -123,11 +123,11 @@ a:hover .caption {
 	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 }
 
-.slide1 { background-image: url('../images/marina-vitale-t809JJ6r9KA-unsplash (1).jpg');}
-.slide2 { background-image: url('../images/caroline-hernandez-TMpQ5R9mbOc-unsplash (1).jpg');}
-.slide3 { background-image: url('../images/brooke-cagle-zF8ss0qB_ik-unsplash (1).jpg'); }
-.slide4 { background-image: url('../images/da-kraplak-j4cOKZojvNI-unsplash.jpg'); }
-.slide5 { background: green; }
+.slide1 { background-image: url('../images/soulseeker-creative-photography-MhNvUsW0plE-unsplash_sp.jpg');}
+.slide2 { background-image: url('../images/IMG_9223_sp.JPG');}
+.slide3 { background-image: url('../images/1J1A3976b_sp.jpg'); }
+.slide4 { background-image: url('../images/ilestamphotography3_sp.jpg'); }
+.slide5 { background-image: url('../images/IMG_9438_sp.JPG'); }
 
  .controls {
 	left: 50%;
@@ -358,6 +358,9 @@ h2 + p {
   text-align: center;
   margin-top: 0;
 }
+section img.om_mig {
+  margin-top: 100px;
+}
 /*.profile_img {
   width: 100%;
   position: absolute;
@@ -545,9 +548,7 @@ img.bgImg {
   .om_mig h1 {
     font-size: 100px;
   }
-  .om_mig img {
-    margin-top: 100px;
-  }
+
   .news {
     margin: 40px 0;
   }
