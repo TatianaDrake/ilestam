@@ -11,7 +11,8 @@ document.querySelector('img.om_mig').addEventListener('click', function(e) {
   myOverlay.appendChild(highRes);
 
   highRes.addEventListener('click', function() {
-  myOverlay.parentNode.removeChild(myOverlay);
+  myOverlay.style.display = 'none';
+  highRes.parentNode.removeChild(highRes);
   });
 
   }, false);
