@@ -361,12 +361,7 @@ h2 + p {
 section img.om_mig {
   margin-top: 100px;
 }
-/*.profile_img {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  clear: left;
-}*/
+
 /****************************************************************  FORM  START */
 
 .contact_form button, input, select, textarea {

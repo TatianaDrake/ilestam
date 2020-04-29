@@ -1,4 +1,4 @@
-//zoom pictures START
+//zoom pictures START________om mig
 document.querySelector('img.om_mig').addEventListener('click', function(e) {
   var lowRes = e.target.src;
   var myOverlay = document.querySelector('.overlay_om_mig');
@@ -20,15 +20,19 @@ document.querySelector('img.om_mig').addEventListener('click', function(e) {
     //zoom pictures FINISH
 //hide the paragraph start
 document.getElementById('button').addEventListener('click', function() {
+
   let arr = document.getElementsByClassName('block_none')
+
 for (item of arr) {
 		item.classList.add('block_visible')
+
 	}
   })
 document.getElementById('mindre').addEventListener('click', function() {
   let arr = document.getElementsByClassName('block_none')
 for (item of arr) {
 		item.classList.remove('block_visible')
+  
 	}
   })
   //hide the paragraph finish
