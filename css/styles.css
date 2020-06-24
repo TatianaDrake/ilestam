@@ -25,19 +25,10 @@ figure img {
 .mina_bilder_grid {
   background: #FFCDB2;
 position: relative;
-height: 200vh;
 }
-.grid_container {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-  grid-gap: 20px;
-  grid-auto-flow: dense;
-}
 .grid_container a {
   display: block;
-	margin-bottom: 1em;
 	text-decoration: none;
   position: relative;
 }
@@ -91,26 +82,24 @@ a:hover .caption {
     grid-row: span 2;
 }
 
-
-
 /*SLIDER CSS start*/
 
 .mina_bilder {
-	height: 120vh;
 	/*margin: 100px auto 0;*/
 	position: relative;
 	width: 100vw;
   background: mistyrose;
 }
 .wrapper_slider {
-  position: absolute;
-  margin-left: 15%;
+  /*position: absolute;*/
+  margin: 0 auto;
+  height: 50vw;
 }
 .slider {
   margin-top: -40px;
-	height: 500px;
+	height:100%;
   position: relative;
-  width: 700px;
+  width: 100%;
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
@@ -122,8 +111,8 @@ a:hover .caption {
   background-repeat: no-repeat;
   opacity: 0;
   position: absolute;
-	height: 500px;
-	width: 700px;
+	height: 100%;
+	width: 100%;
 
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
@@ -142,7 +131,6 @@ a:hover .caption {
 .slide5 { background-image: url('../images/IMG_9438_sp.JPG'); }
 
  .controls {
-	left: 50%;
 	margin-left: -98px;
 	position: absolute;
 }
@@ -231,7 +219,6 @@ a:hover .caption {
 }
 /*Hide the paragraph*****************/
 .container {
-  max-width: 1250px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -531,6 +518,29 @@ img.bgImg {
     grid-gap: 10px;
   }
 */
+.container {
+  max-width: 1250px;
+}
+.mina_bilder_grid {
+  height: 200vh;
+}
+.grid_container {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+}
+.grid_container a {
+	margin-bottom: 1em;
+}
+.controls {
+ left: 50%;
+}
+.mina_bilder {
+	height: 120vh;
+}
   .grid_item a {
     margin-bottom: 0;
   }
@@ -629,13 +639,39 @@ img.bgImg {
 }
 
 @media screen and (max-width:376px){
+  .container {
+    max-width: 90%;
+  }
+
+  .mina_bilder_grid {
+    height: 130vh;
+  }
+
+  .grid_container {
+    list-style-type: none;
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+  }
+  .grid_container a {
+  	margin-bottom: 5px;
+  }
+
+  .controls {
+ 	  padding-left: 30%;
+  }
+
+  .mina_bilder {
+  	height: 60vh;
+  }
+
   .grid-container {
     border: 2px solid maroon;
     display: grid;
     margin: 1em;
   	padding: 0;
   	list-style-type: none;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, minmax(100px, auto));
     gap: 10px;
   }
